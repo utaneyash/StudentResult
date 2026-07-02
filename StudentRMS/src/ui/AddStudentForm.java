@@ -53,6 +53,8 @@ public class AddStudentForm extends JDialog {
         JButton saveBtn = new JButton(existing == null ? "Add" : "Update");
         saveBtn.setBackground(new Color(70, 130, 180));
         saveBtn.setForeground(Color.WHITE);
+        saveBtn.setOpaque(true);
+        saveBtn.setBorderPainted(false);
         saveBtn.addActionListener(e -> handleSave());
 
         JButton cancelBtn = new JButton("Cancel");
